@@ -1,0 +1,23 @@
+STARTDIR=<ENTER THE DIR WHERE YOUR SCRIPT will be executed>
+# Health+ key
+healthpluskey=<YOUR HEALTHPLUSKEY>
+# Health+ key secret
+healthplussecret=<YOUR HEALTHPLUSSECRET>
+# Hostname of Oracle Databaser
+oraserver=localhost
+#Port of Oracle Database'
+oraport=1521
+# SID of Oracle Database 
+orasid=ORCLCDB
+# Service Name of PDB
+orapdbname=ORCLPDB1
+# Username in Oracle DB, which need all privs for the connector, need to be created in DB
+orausername=C##MYUSER
+# Password of Oraxle Username
+orapassword=password
+# Method how to read: Start from Current SNC=current or force_current, read only Data from Table: snapshot, or enter a valid SCN to start from or a valid timestamp
+startfrom=current
+# Enter the name of the one table in the format PDB-Service-Name[.]SCHEMANAME[.]TABLENAME the connect need select priv for this table.
+tablename=ORCLPDB1[.]ORDERMGMT[.]PRODUCTS
+# Plugin Path for the CDC Connector on your desktop
+pluginpath=>YOUR INSTALLATION PATH OF THE CDC CONNECTOR>
